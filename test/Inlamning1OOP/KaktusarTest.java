@@ -6,7 +6,9 @@ class KaktusarTest {
     Kaktusar kaktus = new Kaktusar("Igge", 0.2);
 
     @Test
-    void setmängdVätska() {
-        assert (kaktus.setmängdVätska() == 0.02);
+    void setmängdVätska() {                             //TDD för att testa uträkningsmetoden setmängdVätska för Kaktusar
+        double kaktusTest = kaktus.setmängdVätska();
+        assert (kaktusTest == 0.02);
+        assert(kaktusTest != 0.01);
     }
 }
