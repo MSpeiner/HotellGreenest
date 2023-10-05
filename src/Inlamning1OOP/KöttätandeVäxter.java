@@ -1,8 +1,8 @@
 package Inlamning1OOP;
 
 public class KöttätandeVäxter extends Växter {          //extends växter (arv) & implementerar interface HotellGreenest
-    double basMängdVätska = 0.1;
-    double extraTillskottVätska = 0.2;
+    protected double basMängdVätska = 0.1;
+    protected double extraTillskottVätska = 0.2;
 
     public KöttätandeVäxter(String namn, double längd) {
         super(namn, längd);

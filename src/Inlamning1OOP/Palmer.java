@@ -1,7 +1,7 @@
 package Inlamning1OOP;
 
 public class Palmer extends Växter {           //extends växter (arv) & implementerar interface HotellGreenest
-    double basMängdVätska = 0.5;
+    protected double basMängdVätska = 0.5;
 
     public Palmer(String namn, double längd) {
         super(namn, längd);
