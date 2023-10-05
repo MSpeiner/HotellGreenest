@@ -1,6 +1,6 @@
 package Inlamning1OOP;
 
-public class Palmer extends Växter implements VäxtKrav {           //extends växter (arv) & implementerar interface HotellGreenest
+public class Palmer extends Växter {           //extends växter (arv) & implementerar interface HotellGreenest
     double basMängdVätska = 0.5;
 
     public Palmer(String namn, double längd) {

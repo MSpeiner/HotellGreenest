@@ -1,6 +1,6 @@
 package Inlamning1OOP;
 
-public class KöttätandeVäxter extends Växter implements VäxtKrav {          //extends växter (arv) & implementerar interface HotellGreenest
+public class KöttätandeVäxter extends Växter {          //extends växter (arv) & implementerar interface HotellGreenest
     double basMängdVätska = 0.1;
     double extraTillskottVätska = 0.2;
 

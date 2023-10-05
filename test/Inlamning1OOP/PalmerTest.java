@@ -15,7 +15,6 @@ class PalmerTest {
     @Test
     void setmängdVätska() {                           //TDD för att testa uträkningsmetoden setmängdVätska för Palmer
         assert (palm1Test== palm1TestKorrekt && palm2Test == palm2TestKorrekt);
-        assert (palm1Test!= palmTestInkorrekt);
-        assert (palm2Test!= palmTestInkorrekt);
+        assert (palm1Test!= palmTestInkorrekt && palm2Test!= palmTestInkorrekt);
     }
 }
