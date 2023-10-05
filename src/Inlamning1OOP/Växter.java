@@ -5,19 +5,22 @@ import java.util.List;
 
 public class Växter implements VäxtKrav { //Implementerar interfacet HotellGreenest
 
+
     public enum VäxternasVätskor {             //Enum som innehåller ett konstant värde med blommornas olika vätskor
         MINERALVATTEN("Mineralvatten"), PROTEINDRYCK("Proteindryck"), KRANVATTEN("Kranvatten");
-    public final String vätskaFörVäxt;
-    VäxternasVätskor(String s){
-
-        vätskaFörVäxt = s;
+        public final String vätskaFörVäxt;
+        VäxternasVätskor(String s){
+            vätskaFörVäxt = s;
+        }
     }
-}
+
 
     protected String namn;                      //Inkapsling av variabel
     protected double längd;                     //Inkapsling av variabel
     protected double mängdVätska;               //Inkapsling av variabel
     protected String vätska;                    //Inkapsling av variabel
+
+
 
     public Växter() {}
 
@@ -25,6 +28,8 @@ public class Växter implements VäxtKrav { //Implementerar interfacet HotellGre
         this.namn = namn;
         this.längd = längd;
     }
+
+
 
     public String vilkenPlantaSkaVattnas() {                            //Använder metoden som krävs i interface
         try {
@@ -43,7 +48,7 @@ public class Växter implements VäxtKrav { //Implementerar interfacet HotellGre
     }
 
 
-    public static boolean finnsValdPlanta(List<Växter> plantor, String valdPlanta) {
+    public static boolean finnsValdPlanta(List<Växter> plantor, String valdPlanta) {    //Använder metoden som krävs i interface
         for (Växter planta : plantor) {
             if (planta.namn.equals(valdPlanta)) {
                 return true;
