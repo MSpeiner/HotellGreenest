@@ -8,7 +8,7 @@ public class Kaktusar extends Växter implements VäxtKrav {         //extends v
         this.vätska = VäxternasVätskor.MINERALVATTEN.vätskaFörVäxt;         //Använder enum för att sätta värdet på string variabeln vätska
         this.mängdVätska = setmängdVätska();
     }
-    public double setmängdVätska( ){
+    public double setmängdVätska(){
         this.mängdVätska = basMängdVätska;
         return mängdVätska;
     }

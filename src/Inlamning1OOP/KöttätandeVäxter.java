@@ -10,7 +10,7 @@ public class KöttätandeVäxter extends Växter implements VäxtKrav {         
         this.mängdVätska = setmängdVätska();
     }
 
-    public double setmängdVätska( ){
+    public double setmängdVätska(){
         this.mängdVätska= basMängdVätska + (extraTillskottVätska*längd);
         return mängdVätska;
     }
