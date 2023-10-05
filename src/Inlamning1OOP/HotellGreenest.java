@@ -35,7 +35,6 @@ public class HotellGreenest {
     }
 
     public static void main(String[] args) {
-
         HotellGreenest hk = new HotellGreenest();
     }
 }
