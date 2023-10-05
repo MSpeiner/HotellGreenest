@@ -1,6 +1,7 @@
 package Inlamning1OOP;
 
 public class Palmer extends Växter implements VäxtKrav {           //extends växter (arv) & implementerar interface HotellGreenest
+    double basMängdVätska = 0.5;
 
     public Palmer(String namn, double längd) {
         super(namn, längd);
@@ -8,7 +9,7 @@ public class Palmer extends Växter implements VäxtKrav {           //extends v
         this.mängdVätska = setmängdVätska();
     }
     public double setmängdVätska() {
-        this.mängdVätska = 0.5 * längd;
+        this.mängdVätska = basMängdVätska * längd;
         return mängdVätska;
     }
 }
